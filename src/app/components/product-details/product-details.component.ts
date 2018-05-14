@@ -27,7 +27,7 @@ id: number;
   ngOnInit() {
 
     this.route.params.forEach((params: Params) => {
-      debugger;
+
       this.id = params['id'];
       this.product = this.getProductByProductId(this.id);
     });
@@ -36,7 +36,7 @@ id: number;
   }
 
   getProductByProductId(id: number) {
-debugger;
+
     for (const i in this.dataService.products) {
       if (this.dataService.products[i].id == id) {
         return this.dataService.products[i];

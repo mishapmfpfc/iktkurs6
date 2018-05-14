@@ -19,7 +19,6 @@ export class CatalogComponent implements OnInit {
   constructor(private loginService: LoginService,
     private dataService: DataService,
   private router: Router) {
-
     if (!this.loginService.isActiveSession()) {
       this.router.navigate(['/']);
     }
